@@ -1,0 +1,59 @@
+{
+  "updated": "2026-11-27",
+  "status": "source audit; no real clips acquired or trained",
+  "sources": [
+    {
+      "name": "VideoRun2D",
+      "url": "https://github.com/BiDAlab/VideoRun2D",
+      "domain": "outdoor grass sprints",
+      "reportedClips": 40,
+      "reportedAthletes": 5,
+      "reportedStrides": 240,
+      "fps": 100,
+      "labels": "expert joint positions; contact labels not established",
+      "license": "dataset license not confirmed",
+      "access": "download instructions under construction; repository contains diagrams, not dataset",
+      "acquiredClips": 0
+    },
+    {
+      "name": "Pipelines Open Dataset",
+      "url": "https://doi.org/10.26181/33383809.v1",
+      "catalog": "https://researchdata.edu.au/pipelines-open-dataset/4131947",
+      "domain": "laboratory running and other tasks",
+      "labels": "video and 3D motion capture; foot contact labels not confirmed",
+      "license": "CC BY 4.0 as catalog reports",
+      "access": "DOI/API could not be fetched in current environment; exact files and synchronized labels not inspected",
+      "acquiredClips": 0
+    },
+    {
+      "name": "FootNet",
+      "url": "https://researchdata.bath.ac.uk/965/",
+      "domain": "treadmill running; not video",
+      "labels": "force-derived targets and kinematic features",
+      "license": "archive lists GNU LGPL 3.0 for software; separate dataset reuse terms must be checked",
+      "access": "716 MB archive; repository has binary MAT example; cannot download binaries here",
+      "acquiredClips": 0
+    },
+    {
+      "name": "Strideo",
+      "url": "https://github.com/Matteofanfoni/strideo",
+      "domain": "middle distance running",
+      "labels": "pretrained aggregate gait predictions, not independent event labels",
+      "license": "repo MIT; model and training dataset permissions to verify separately",
+      "access": "model listed as LFS pointer; no video training dataset in repository root",
+      "acquiredClips": 0
+    }
+  ],
+  "blockers": [
+    "No network access for direct media download in execution environment",
+    "MediaPipe not installed in current Python runtime",
+    "No independently verified labeled online sprint clips acquired",
+    "Video timestamp/frame rate and source permissions must be checked before training"
+  ],
+  "training": {
+    "uniqueRealClips": 0,
+    "realAthletes": 0,
+    "realTrainingWindows": 0,
+    "releaseApproved": false
+  }
+}
